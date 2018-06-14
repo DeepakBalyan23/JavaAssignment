@@ -26,18 +26,22 @@ public class ReverseAndSumTest {
 	@Test
 	public void testSumOfEvenDigit() throws Exception {
 		//Arrange
+		int expectedValue = 30;
 		ReverseAndSum pl=new ReverseAndSum();
 		//Act
+		int actualValue = pl.sumOfEvenDigit("3434834832");
 		//Assert
-		assertEquals(30, pl.sumOfEvenDigit("3434834832"));
+		assertEquals(expectedValue, actualValue);
 	}
 	
 	@Test
 	public void testReverseSort() throws Exception {
 		//Arrange
+		String expectedValue = "8844433332";
 		ReverseAndSum pl=new ReverseAndSum();
 		//Act
+		String actualValue = pl.reverseSort("3434834832");
 		//Assert
-		assertEquals("8844433332", pl.reverseSort("3434834832"));
+		assertEquals(expectedValue, actualValue);
 	}
 }
