@@ -1,9 +1,8 @@
 package Main;
 
 public class NumberGuess {
-	
+	public final int x =(int)(Math.random() * 100); 
 	public String predictionResult(int num) {
-		final int x = 40;
 		if(num>x)
 			return "Number guessed is more than original number";
 		else if(num<x)
