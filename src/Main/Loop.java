@@ -2,12 +2,16 @@ package Main;
 
 public class Loop {
 	public static String display(int n) {
-		String s = "";
-		for(int i=0;i<=n;i++) {
-			for(int j=0;j<i;j++) {
-				s+=i;
+		if(n<0) {
+			return "Invalid Input";
+		} else {
+			String s = "0";
+			for(int i=0;i<=n;i++) {
+				for(int j=0;j<i;j++) {
+					s+=i;
+				}
 			}
+			return s;
 		}
-		return s;
 	}
 }
