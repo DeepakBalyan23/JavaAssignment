@@ -2,16 +2,29 @@ package Main;
 import java.util.*;
 
 public class ConditionalCheck {
-	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		int x = sc.nextInt();
-		sc.close();
-		if(x <= 30 && x >= 20){
-			if(x%2==0){
-				System.out.println("Print Tom");
-			} else {
-				System.out.println("Print Jerry");
-			}
+	
+	public String displayString(int num) {
+		if(isInBetweenRange(num)){
+			if(isEven(num))
+				return "Jerry";
+			else
+				return "Tom";
+		} else {
+			return "";
 		}
+	}
+	public boolean isInBetweenRange(int num) {
+		if(num <= 30 && num >= 20) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean isEven(int num) {
+		if(num%2==0)
+			return true;
+		else
+			return false;
 	}
 }

@@ -1,8 +1,8 @@
 package Main;
-import java.util.Scanner;
 
 public class Palindrome {
-	public static String displayResult(String str) {
+	
+	public String displayResult(String str) {
 		String final_str = str;
 		if(isPalindrome(str)) {
 			final_str+=" is palindrome";
@@ -17,7 +17,7 @@ public class Palindrome {
 		return final_str;
 	}
 	
-	public static boolean isPalindrome(String str) {
+	public boolean isPalindrome(String str) {
 		int len = str.length();
 		boolean is_palindrome = true;
 		int sum = 0;
@@ -30,7 +30,7 @@ public class Palindrome {
 		return is_palindrome;
 	}
 	
-	public static int getEvenLetterSum(String str) {
+	public int getEvenLetterSum(String str) {
 		int len = str.length();
 		int sum = 0;
 		for(int i=0; i< len;i++) {
