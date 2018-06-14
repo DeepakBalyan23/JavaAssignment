@@ -7,23 +7,19 @@ public class PalindromeTest {
    @Test
    public void testValidPalindrome() throws Exception {
       //Arrange
-      boolean expectedValue=true;
       Palindrome pl=new Palindrome();
       //Act
-      boolean actualValue=pl.isPalindrome("2345432");
       //Assert
-      assertEquals(expectedValue, actualValue);
+      assertTrue(pl.isPalindrome("2345432"));
    }
    
    @Test
    public void testInalidPalindrome() throws Exception {
       //Arrange
-      boolean expectedValue=false;
       Palindrome pl=new Palindrome();
       //Act
-      boolean actualValue=pl.isPalindrome("234542");
       //Assert
-      assertEquals(expectedValue, actualValue);
+      assertFalse(pl.isPalindrome("234542"));
    }
    
    @Test

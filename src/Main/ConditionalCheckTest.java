@@ -7,45 +7,37 @@ public class ConditionalCheckTest {
    @Test
    public void testInsideGivenRange() throws Exception {
       //Arrange
-      boolean expectedValue=true;
       ConditionalCheck pl=new ConditionalCheck();
       //Act
-      boolean actualValue=pl.isInBetweenRange(25);
       //Assert
-      assertEquals(expectedValue, actualValue);
+      assertTrue(pl.isInBetweenRange(25));
    }
    
    @Test
    public void testOutsideGivenRange() throws Exception {
       //Arrange
-      boolean expectedValue=false;
       ConditionalCheck pl=new ConditionalCheck();
       //Act
-      boolean actualValue=pl.isInBetweenRange(31);
       //Assert
-      assertEquals(expectedValue, actualValue);
+      assertFalse(pl.isInBetweenRange(31));
    }
    
    @Test
    public void testIsEven() throws Exception {
 	   //Arrange
-	   boolean expectedValue=true;
 	   ConditionalCheck pl=new ConditionalCheck();
 	   //Act
-	   boolean actualValue=pl.isEven(32);
 	   //Assert
-	   assertEquals(expectedValue, actualValue);
+	   assertTrue(pl.isEven(32));
    }
    
    @Test
    public void testIsNotEven() throws Exception {
 	   //Arrange
-	   boolean expectedValue=false;
 	   ConditionalCheck pl=new ConditionalCheck();
 	   //Act
-	   boolean actualValue=pl.isEven(31);
 	   //Assert
-	   assertEquals(expectedValue, actualValue);
+	   assertFalse(pl.isEven(31));
 	}
    
    @Test
