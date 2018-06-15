@@ -9,9 +9,8 @@ public class NumberGuessTest {
 		//Arrange
 		String expectedValue = "Number guessed is more than original number";
 		NumberGuess pl=new NumberGuess();
-		int y = pl.x + 2;
 		//Act
-		String actualValue = pl.predictionResult(y);
+		String actualValue = pl.predictionResult(50);
 		//Assert
 		assertEquals(expectedValue, actualValue);
 	}
@@ -21,9 +20,8 @@ public class NumberGuessTest {
 		//Arrange
 		String expectedValue = "Number guessed is less than original number";
 		NumberGuess pl=new NumberGuess();
-		int y = pl.x - 2;
 		//Act
-		String actualValue = pl.predictionResult(y);
+		String actualValue = pl.predictionResult(30);
 		//Assert
 		assertEquals(expectedValue, actualValue);
 	}
@@ -33,9 +31,8 @@ public class NumberGuessTest {
 		//Arrange
 		String expectedValue = "Number guessed matches the original number";
 		NumberGuess pl=new NumberGuess();
-		int y = pl.x;
 		//Act
-		String actualValue = pl.predictionResult(y);
+		String actualValue = pl.predictionResult(40);
 		//Assert
 		assertEquals(expectedValue, actualValue);
 	}
